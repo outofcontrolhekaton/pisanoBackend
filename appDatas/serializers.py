@@ -13,7 +13,7 @@ class PillSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Pill
-        fields = ('title', 'image', 'QR_AI01', 'desc', 'pharmacies')
+        fields = ('id', 'title', 'image', 'QR_AI01', 'desc', 'pharmacies')
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -21,6 +21,6 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('pill', 'price', 'stock')
+        fields = ('id', 'pill', 'price', 'stock')
 
 
