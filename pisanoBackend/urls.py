@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^products/(?P<title>[\w-]+)/$', views.ProductDetailByTitle.as_view()),
     url(r'^pharmacies/$', views.PharmacyList.as_view()),
     url(r'^pharmacies/(?P<pk>[0-9]+)/$', views.PharmacyDetailById.as_view()),
-    url(r'^pills/(?P<title>[\w-]+)/$', views.PharmacyDetailByTitle.as_view())
+    url(r'^pharmacies/(?P<title>[\w-]+)/$', views.PharmacyDetailByTitle.as_view())
 ]
 
 if settings.DEBUG:
